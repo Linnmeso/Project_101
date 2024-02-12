@@ -16,9 +16,7 @@ body {
 }
 #hero {
     position: sticky;
-    width: 100%;
     top: 0;
-    background-color: #000000e9;
 }
 .hero1 {
     display: flex;
@@ -28,17 +26,19 @@ body {
 }
 nav {
     display: flex;
+    list-style: none;
     width: 90%;
-    height: 100px;
+    /* height: 300px; */
     margin: auto;
     padding: 10px 0;
     align-items: center;
     justify-content: space-between;
-    /* position: sticky;
-    top: 0; */
 }
 nav img {
     width: 10%;
+}
+nav ul {
+    list-style: none;
 }
 nav ul li {
     display: inline-block;
@@ -114,17 +114,26 @@ color: #ff004f;
     font-size: 50px;
     font-weight: bold;
 }
-.tab-tittles {
+h2 {
+    padding-top: 30px;
+    text-align: center;
+    padding-bottom: 10px;
+    font-size: 2rem;
+}
+ul {
+    padding-top: 20px;
+}
+/* .tab-tittles {
     display: flex;
     margin: 20px 0 40px;
-}
-.tab-links {
+} */
+/* .tab-links {
     margin-right: 50px;
     font-size: 18px;
     font-weight: 500;
     cursor: pointer;
     position: relative;
-}
+} */
 /* .tab-links::after {
 content: "";
 width: 0;
@@ -138,7 +147,7 @@ transition: 0.5s;
 .tab-links.active-link::after {
     width: 505;
 } */
-.tab-contents ul li {
+/* .tab-contents ul li {
     list-style: none;
     margin: 10px 0;
 }
@@ -148,11 +157,11 @@ transition: 0.5s;
 }
 .tab-contents {
     display: flex;
-}
+} */
 /* ..........services.......... */
 #services {
-    padding: 30px;
-    margin: 0 3rem;
+    padding: 80px 0;
+    margin: 0 5rem;
 }
 .services-list {
     display: grid;
@@ -192,8 +201,8 @@ i {
 }
 /* ..........portfolio.......... */
 #portfolio {
-    padding: 50px 0;
-    margin: 0 4rem;
+    padding: 80px 0;
+    margin: 0 2rem;
 }
 .work-list {
     display: grid;
@@ -299,7 +308,7 @@ i {
 }
 .social-icons a:hover {
     color: #ff004f;
-    transform: translate(-5px);
+    transform: translateY(-5px);
 }
 .btn.btn2 {
     display: inline-block;
@@ -332,4 +341,10 @@ form .btn2 {
     background: #fff;
     font-weight: 300;
     margin-top: 20px;
+}
+/* ..........css for small screen.......... */
+@media screen and (max-width:480px){
+    .body {
+        margin-top: 100%;
+    }
 }
